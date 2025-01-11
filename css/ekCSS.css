@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;  
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+body{
+    overflow-x: hidden
+}
+
+h1{
+    color: black;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    padding-left: 11%;
+    padding-right: 8%;
+    position: relative;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 15px;
+    
+    border-bottom: 1px solid black;
+   
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.nav ul li a {
+    color: black;
+    font-size: 15px;
+    transition: ease 0.5s;
+    padding-bottom: 5px;
+}
+
+.nav ul li a:hover{
+    border-bottom: 1px solid rgb(210, 182, 23);
+}
+
+
+.nav button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    border:  1px solid black;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all ease 0.5s;
+}
+
+.nav button:hover{
+    color: rgb(210, 182, 23);
+    
+}
+
+.container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.landingPageText h1{
+    text-align: center;
+    font-size: 70px;
+    margin-right: 0.1%; 
+}
+
+.landingPageimg img {
+    width: 400px;
+}
+
+.sideNav{
+    border-right: 1px solid black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 140px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sideNav img{
+    width: 105px;
+    margin-left: 11%;
+    margin-top: 20%;
+}
+
+
+.sideNav p{
+    margin-top: 370%;
+    font-size: 14px;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+}
+
+.infoContainer{
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 4%;
+    text-align: center;
+}
+
+.infoContainer h1{
+    letter-spacing: 3px;
+}
+
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.glassBoxes1, .glassBoxes2, .glassBoxes3{
+    
+    margin: 18px;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.59);
+}
+
+.infoContainer p{
+    margin-top: 15px;
+}
+
+.infoContainer img{
+    margin-top: 35px;
+    margin-left: 20px;
+    width: 180px;
+    
+}
+
+
+.glassBoxes3 img{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 140px;
+    
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); 
+    }
+}
+
+.brands{
+    margin-top: 4%;
+    border-radius: 16px;
+    max-width: 84%;
+    
+    margin-left: 12%;  
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+
+}
+
+.brands h1{
+    margin-top: 2%;
+    color: black;
+}
+
+.brands-slide {
+    
+    
+    border-radius: 15px;
+  
+    background-color: white;
+    margin-top: 20px;
+    display: inline-block;
+    animation: slide 40s linear infinite;
+    position: relative;
+    z-index: 2; 
+    
+    
+
+}
+
+.brands-slide p {
+    font-size: 25px;
+    color: rgb(210, 182, 23);
+    display: inline-block;
+    margin: 5px 25px;
+}
+
+
+
+
+
+.brands::before,
+.brands::after {
+    content: '';
+    position: absolute;
+    top: 70%;
+    bottom: 0;
+    height: 40px;
+    width: 100px;
+    z-index: 3; 
+   
+}
+
+
+.brands::before {
+    left: 0;
+    background: linear-gradient(to right, white 20%, transparent 100%);
+}
+
+
+.brands::after {
+    right: 0;
+    background: linear-gradient(to left, white 20%, transparent 100%);
+}
+
+
+.aboutSection{
+    
+    margin-left: 8%;
+    margin-top: 6%;
+    text-align: center;
+}
+
+.teamImages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+
+}
+
+.teamImages img{
+    margin-left: 60px;
+    margin-right: 70px;
+    margin-top: 70px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+
+.teamDes, .headerTags, .infoTags{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+
+.teamDes p{
+    width: 300px;
+    margin-left: 125px;
+    margin-top: 20px;
+
+}
+
+.headerTags{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.infoTags{
+    font-size: 14px;
+}
+
+
+/* 
+Illustrations used from: https://undraw.co/
+
+https://www.pexels.com/photo/businessman-standing-with-hands-in-pockets-near-glass-wall-5648408/
+
+https://www.pexels.com/photo/woman-in-orange-blazer-sitting-on-car-holding-her-phone-5717511/
+
+https://www.pexels.com/photo/a-woman-in-gray-coat-holding-white-folder-6535735/
+
+https://www.pexels.com/photo/couple-buying-a-pineapple-4199582/
+
+https://www.pexels.com/photo/focused-young-man-making-online-shopping-with-smartphone-and-credit-card-6353658/
+
+https://www.pexels.com/photo/person-in-white-long-sleeve-shirt-wearing-smartwatch-7621138/
+
+https://www.pexels.com/photo/paying-with-a-smartphone-4199525/ */
+
